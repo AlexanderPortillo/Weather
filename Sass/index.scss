@@ -1,0 +1,124 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding: 1rem;
+	// background-color: #61677a;
+	background-image: url('../Img/carretera-en-medio-del-mar_5120x2880_xtrafondos.com.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&__boxes {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+	}
+}
+
+.box {
+	width: 450px;
+	overflow: hidden;
+	padding: 0.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 0.5rem;
+	border-radius: 1rem;
+	backdrop-filter: blur(5px);
+	transition: box-shadow 1s;
+	border: 1px solid #ffffff;
+
+	&:hover {
+		box-shadow: 0 0 5px #ffffff;
+	}
+
+	&__time--img {
+		width: 420px;
+		height: 250px;
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 1rem;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: #ffffff;
+		text-shadow: 0 0 5px #ffffff;
+	}
+
+	&__temp {
+		font-size: 2.5rem;
+	}
+
+	&__wheather {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		gap: 0.5rem;
+
+		img {
+			width: 80px;
+			height: 80px;
+		}
+	}
+
+	&__data {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0.5rem;
+		border-radius: 1rem;
+		background-color: #384266;
+	}
+
+	&__data--wind,
+	&__data--main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__info {
+		font-weight: bold;
+		font-size: 1.2rem;
+	}
+
+	&__data--main {
+		i {
+			font-size: 0.9rem;
+		}
+	}
+
+	&__title {
+		font-size: 0.8rem;
+	}
+
+	&__title--main {
+		font-size: 0.8rem;
+		text-align: center;
+	}
+
+	&__info--main {
+		font-size: 0.9rem;
+		font-weight: bold;
+	}
+}
