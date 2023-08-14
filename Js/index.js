@@ -17,9 +17,9 @@ const ElSalvador = (() => {
 
 		// Compara si la hora actual está dentro del intervalo de 6:00 AM a 5:59 PM
 		if (horaActual.getTime() >= horaEspecifica.getTime() && horaActual.getHours() < 18) {
-			img.src = '../Img/icons8-sol-80.png';
+			img.src = 'Img/icons8-sol-80.png';
 		} else {
-			img.src = '../Img/icons8-luna-80.png';
+			img.src = 'Img/icons8-luna-80.png';
 		}
 	};
 
